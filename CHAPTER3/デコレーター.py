@@ -78,3 +78,38 @@ def greeting():
 
 print(greeting)
 print(greeting())
+
+"""# **3.7.3 functools.wrapsを使用する**"""
+
+# デコレーターの使用によりもとの関数名が失われる例
+def my_decorator(func):
+    def wrap_function(a):
+        """wrap_functionのドキュメントです"""
+        func(a)
+    return wrap_function
+
+@my_decorator
+def greeting(name):
+    """greetingのドキュメントです"""
+    print(f'こんにちは、{name}さん')
+
+print(greeting)
+print(greeting.__name__)
+print(greeting.__doc__)
+
+# functools.wrapsを使用する例
+from functools import wraps
+def my_decorator(func):
+    @wraps(func)
+    def wrap_function(a):
+        """wrap_functionのドキュメントです"""
+        func(a)
+    return wrap_function
+
+@my_decorator
+def greeting(name):
+    """greetingのドキュメント"""
+    print(f'こんにちは、{name}さん')
+
+print(greeting.__name__)
+print(greeting.__doc__)
