@@ -1,0 +1,37 @@
+対象外
+
+5.2 mypy
+
+CHAPTER 7 数値の処理
+
+8.4 dateutil
+
+9.3 bisect
+
+9.5 pprint
+
+CHAPTER 12 データ圧縮とアーカイブと永続化
+
+13.3 configparser
+
+13.4 PyYAML
+
+13.5 openpyxl
+
+13.6 Pillow
+
+14.3 Requests
+
+14.5 emai
+
+CHAPTER 15 HTML/XMLを扱う
+
+16.4 pytest
+
+16.5 pydoc
+
+17.3 traceback
+
+18.3 cryptography
+
+CHAPTER 19 並行処理、並列処理
